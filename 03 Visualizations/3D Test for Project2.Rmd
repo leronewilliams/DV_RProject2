@@ -1,0 +1,25 @@
+---
+output:
+  html_document:
+    keep_md: yes
+---
+```{r setup, results='asis'}
+library(knitr)
+knit_hooks$set(webgl = hook_webgl)
+```
+
+This works fine.
+
+```{r testgl, webgl=TRUE}
+library(rgl)
+x <- sort(rnorm(1000))
+y <- rnorm(1000)
+z <- rnorm(1000) + atan2(x,y)
+plot3d(x, y, z, col=rainbow(1000))
+```
+
+This one also works.
+
+```{r testgl2, webgl=TRUE}
+open3d()
+spheres3d(x, y, z, col=rainbow(1000))

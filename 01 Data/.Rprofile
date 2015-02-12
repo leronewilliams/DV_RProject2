@@ -1,0 +1,6 @@
+library("reshape2", lib.loc="/Library/Frameworks/R.framework/Versions/3.1/Resources/library")
+library("RCurl", lib.loc="/Library/Frameworks/R.framework/Versions/3.1/Resources/library")
+library("plyr", lib.loc="/Library/Frameworks/R.framework/Versions/3.1/Resources/library")
+library("ggplot2", lib.loc="/Library/Frameworks/R.framework/Versions/3.1/Resources/library")
+library("gplots", lib.loc="/Library/Frameworks/R.framework/Versions/3.1/Resources/library")
+library("grid", lib.loc="/Library/Frameworks/R.framework/Versions/3.1/Resources/library")

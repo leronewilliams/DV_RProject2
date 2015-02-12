@@ -1,3 +1,8 @@
+
+```{r, echo = FALSE}
+source("../01 Data/.RProfile", echo = TRUE)
+```
+
 ---
 output:
   html_document:
@@ -7,6 +12,8 @@ output:
 library(knitr)
 knit_hooks$set(webgl = hook_webgl)
 ```
+
+
 
 This works fine.
 

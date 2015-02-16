@@ -1,0 +1,16 @@
+{
+    "contents" : "\n```{r, echo = FALSE}\nsource(\"../01 Data/.RProfile\", echo = TRUE)\n```\n\n---\noutput:\n  html_document:\n    keep_md: yes\n---\n```{r setup, results='asis'}\nlibrary(knitr)\nknit_hooks$set(webgl = hook_webgl)\n```\n\n\n\nThis works fine.\n\n```{r testgl, webgl=TRUE}\nlibrary(rgl)\nx <- sort(rnorm(1000))\ny <- rnorm(1000)\nz <- rnorm(1000) + atan2(x,y)\nplot3d(x, y, z, col=rainbow(1000))\n```\n\nThis one also works.\n\n```{r testgl2, webgl=TRUE}\nopen3d()\nspheres3d(x, y, z, col=rainbow(1000))\n",
+    "created" : 1424057693097.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3316730179",
+    "id" : "3C72D27D",
+    "lastKnownWriteTime" : 1424096066,
+    "path" : "~/GitHub/DV_RProject2/03 Visualizations/3D Test for Project2.Rmd",
+    "project_path" : "03 Visualizations/3D Test for Project2.Rmd",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_markdown"
+}

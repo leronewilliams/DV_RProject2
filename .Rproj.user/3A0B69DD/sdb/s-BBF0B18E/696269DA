@@ -1,0 +1,16 @@
+{
+    "contents" : "require (\"reshape2\")\nrequire(\"RCurl\")\nrequire(\"plyr\")\nrequire(\"ggplot2\")\nrequire(\"gplots\")\nrequire(\"grid\")\n",
+    "created" : 1424058111692.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1772453098",
+    "id" : "696269DA",
+    "lastKnownWriteTime" : 1424058335,
+    "path" : "~/GitHub/DV_RProject2/01 Data/.Rprofile",
+    "project_path" : "01 Data/.Rprofile",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

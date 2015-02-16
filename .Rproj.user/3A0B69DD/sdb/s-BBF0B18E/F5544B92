@@ -1,0 +1,16 @@
+{
+    "contents" : "#install.packages(\"Rcpp\")\nlibrary(\"Rcpp\")\nlibrary(\"ggplot2\", lib.loc=\"~/R/win-library/3.1\")\nlibrary(\"gplots\", lib.loc=\"~/R/win-library/3.1\")\nlibrary(\"plyr\", lib.loc=\"~/R/win-library/3.1\")\nlibrary(\"RCurl\", lib.loc=\"~/R/win-library/3.1\")\nlibrary(\"reshape2\", lib.loc=\"~/R/win-library/3.1\")\nlibrary(\"grid\", lib.loc=\"C:/Program Files/R/R-3.1.2/library\")\n\n\n",
+    "created" : 1424057740095.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2487572689",
+    "id" : "F5544B92",
+    "lastKnownWriteTime" : 1423875212,
+    "path" : "~/GitHub/DataVisualization/DrCannata/.Rprofile",
+    "project_path" : null,
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

@@ -1,0 +1,6 @@
+head(vocab)
+tail(vocab)
+tbl_df(vocab)
+glimpse(vocab)
+View(vocab)
+summary(vocab)

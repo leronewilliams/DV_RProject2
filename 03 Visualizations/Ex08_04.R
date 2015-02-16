@@ -49,3 +49,7 @@ detach("package:scatterplot3d", unload = TRUE)
 detach("package:rgl", unload = TRUE)
 detach("package:RColorBrewer", unload = TRUE)
 rm(list = ls())
+
+file.show(system.file("NEWS", package="rgl"))
+example(surface3d)
+example(plot3d)

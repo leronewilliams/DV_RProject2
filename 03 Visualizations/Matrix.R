@@ -1,5 +1,4 @@
 # Scatterplot matrix using "pairs"
-# Put histograms on the diagonal (from "pairs" help)
 panel.hist <- function(x, ...)
 {
   usr <- par("usr"); on.exit(par(usr))
@@ -8,9 +7,7 @@ panel.hist <- function(x, ...)
   breaks <- h$breaks; nB <- length(breaks)
   y <- h$counts; y <- y/max(y)
   rect(breaks[-nB], 0, breaks[-1], y,  ...)
-  # Removed "col = "cyan" from code block; original below
-  # rect(breaks[-nB], 0, breaks[-1], y, col = "cyan", ...) 
-}
+ }
 
 pairs(vocab[c(1:5)], 
       panel = panel.smooth,  # Optional smoother

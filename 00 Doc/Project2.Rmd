@@ -9,36 +9,46 @@ In this R Markdown document we will display and document each step of CS329e R P
 
 Project Requirements <http://www.cs.utexas.edu/~cannata/dataVis/Projects/R%20Project%202/R%20Project%20Requirements.html>.
 
-In the source folder 01 Data, the R script dataframes.R was created to connect to Dr. Cannata's Orcale database and generate 5 data frames using tables in the Orders Schema. The RCurl package was loaded to allow general HTTP requests and process the results returned by the Web server.
+In the source folder 01 Data, the R script dataframes.R was created to connect to Dr. Cannata's Orcale database and generate a data frame from the uploaded Vocabulary.csv file. The RCurl package was loaded to allow general HTTP requests and process the results returned by the Web server.
 
 
 ```{r}
 source("../01 Data/dataframe.R", echo = TRUE)
 ```
 
+A second R script dataframes1.R was created to display the vocab data frame that was previously created in the last step. The head(), tail(), tbl_df(), glimpse(), and summary() functions were used to return subsets of this data frame. 
 
 ```{r}
 source("../01 Data/dataframe1.R", echo = TRUE)
 
 ```
 
+In this data wrangling section, several work flows are constructed using the %>% pipe operator which revealed new information about the data set.
+
 ```{r}
 source("../02 Data Wrangling/Data Wrangling.R", echo = TRUE)
 ```
 
-
-```{r setup, results='asis'}
-library(knitr)
-knit_hooks$set(webgl = hook_webgl)
-```
-
+Lynda.com provides instructional videos which were utilized to create these visualizations. In particular, R Statistics Essential Training, Ch8. Charts for Three or More Variables.
 
 Link to video: <http://www.lynda.com/R-tutorials/R-Statistics-Essential-Training/142447-2.html?srchtrk=index:1%0Alinktypeid:2%0Aq:R%0Apage:1%0As:relevance%0Asa:true%0Aproducttypeid:2>
 
+
+```{r setup, results='asis'}
+source("../03 Visualizations/hook.R", echo = TRUE)
+```
+
+**If you do not see a spinnable 3d plot.** 
+1. Navigate to the top of the page
+2. Click Open in Browser 
+3. Accept the Allow blocked content warning
+4. Scroll down and you should see a spinnable 3d plot of the entire Vocabulary data set.
+**NOTE: This works for Windows**
 ```{r testgl, webgl=TRUE}
 source("../03 Visualizations/plot3d.R", echo = TRUE)
 ```
 
+This is a scatterplot matrix with hotgrams along the diagonal.
 
 ```{r}
 source("../03 Visualizations/Matrix.R", echo = TRUE)

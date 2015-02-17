@@ -1,7 +1,8 @@
 require("dplyr")
 require("tidyr")
+head(vocab)
+#Generates the "Female" and "Male"columns from the "SEX" column
 vocab %>% spread(SEX,EDUCATION) %>% tbl_df
-
 #Average Vocab per Education
 vocab %>% group_by(SEX) %>% summarize(Average_Education = mean(EDUCATION)) %>% tbl_df
 #Average Vocab per Sex

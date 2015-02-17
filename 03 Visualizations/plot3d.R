@@ -1,3 +1,4 @@
+# 3-D scatterplot
 require("rgl")
 require("RColorBrewer")
 plot3d(vocab$YEAR,  # x variable

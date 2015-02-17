@@ -1,3 +1,4 @@
+require("dplyr")
 head(vocab)
 tail(vocab)
 tbl_df(vocab)

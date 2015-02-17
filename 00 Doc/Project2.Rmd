@@ -5,18 +5,42 @@ date: "Monday, February 16, 2015"
 output: html_document
 ---
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+In this R Markdown document we will display and document each step of CS329e R Project 2.
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+Project Requirements <http://www.cs.utexas.edu/~cannata/dataVis/Projects/R%20Project%202/R%20Project%20Requirements.html>.
+
+In the source folder 01 Data, the R script dataframes.R was created to connect to Dr. Cannata's Orcale database and generate 5 data frames using tables in the Orders Schema. The RCurl package was loaded to allow general HTTP requests and process the results returned by the Web server.
+
 
 ```{r}
-summary(cars)
+source("../01 Data/dataframe.R", echo = TRUE)
 ```
 
-You can also embed plots, for example:
 
-```{r, echo=FALSE}
-plot(cars)
+```{r}
+source("../01 Data/dataframe1.R", echo = TRUE)
+
 ```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+```{r}
+source("../02 Data Wrangling/Data Wrangling.R", echo = TRUE)
+```
+
+
+```{r setup, results='asis'}
+library(knitr)
+knit_hooks$set(webgl = hook_webgl)
+```
+
+
+Link to video: <http://www.lynda.com/R-tutorials/R-Statistics-Essential-Training/142447-2.html?srchtrk=index:1%0Alinktypeid:2%0Aq:R%0Apage:1%0As:relevance%0Asa:true%0Aproducttypeid:2>
+
+```{r testgl, webgl=TRUE}
+source("../03 Visualizations/plot3d.R", echo = TRUE)
+```
+
+
+```{r}
+source("../03 Visualizations/Matrix.R", echo = TRUE)
+```
+

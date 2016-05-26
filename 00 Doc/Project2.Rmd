@@ -48,7 +48,7 @@ source("../03 Visualizations/hook.R", echo = TRUE)
 source("../03 Visualizations/plot3d.R", echo = TRUE)
 ```
 
-This is a scatterplot matrix with hotgrams along the diagonal.
+This is a scatterplot matrix with histograms along the diagonal.
 
 ```{r}
 source("../03 Visualizations/Matrix.R", echo = TRUE)
